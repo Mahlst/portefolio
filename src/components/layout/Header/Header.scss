@@ -1,25 +1,27 @@
-// Header.scss
 @use './src/styles/variables' as *;
 @use './src/styles/mixins' as *;
-@use './src/styles/reset' as *;
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1440px;
+    max-width: 1200px;
     width: 100%;
     height: 60px;
     border-bottom: 1px solid rgba($color-secondary, 0.1);
-    padding: 0 30px;
     position: relative;
 
     &_initial {
-        color: $color-secondary;
-        font-family: $font-secondary;
-        font-weight: $font-bold;
-        font-size: $text-2xl;
-        z-index: 2;
+        
+        a {
+            text-decoration: none;
+            color: $color-secondary;
+            font-family: $font-secondary;
+            font-weight: $font-bold;
+            font-size: $text-2xl;
+            z-index: 2;
+        }
+        
         span {
             color: rgba($color-secondary, 0.2);
             font-size: $text-3xl;
@@ -56,7 +58,7 @@
             }
         }
 
-        @media (max-width: 768px) {
+        @include media-breakpoint-down(md) {
             display: flex;
         }
     }
@@ -80,7 +82,7 @@
             }
         }
 
-        @media (max-width: 768px) {
+        @include media-breakpoint-down(md) {
             position: fixed;
             top: 0;
             right: -100%;

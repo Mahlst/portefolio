@@ -1,4 +1,3 @@
-// Header.jsx
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './Header.scss';
@@ -24,7 +23,7 @@ export default function Header() {
     return(
         <header className='header'>
             <div className='header_initial'>
-                <span>{'{'}</span> P <span>{'}'}</span>
+                <Link to="/" ><span>{'{'}</span> RP <span>{'}'}</span></Link>
             </div>
             <div className={`header_burger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
                 <span></span>
@@ -32,7 +31,6 @@ export default function Header() {
                 <span></span>
             </div>
             <nav className={`header_nav ${isMenuOpen ? 'open' : ''}`}>
-                <Link to="/" onClick={() => setIsMenuOpen(false)}>Accueil</Link>
                 <Link to="/projects" onClick={() => setIsMenuOpen(false)}>Projets</Link>
                 <Link to="/skills" onClick={() => setIsMenuOpen(false)}>Compétences</Link>
                 <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>

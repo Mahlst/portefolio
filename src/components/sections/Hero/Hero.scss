@@ -1,0 +1,64 @@
+@use './src/styles/variables' as *;
+@use './src/styles/mixins' as *;
+
+.section_hero {
+    color: $color-secondary;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    gap: 3rem;
+    
+    &__title {
+        font-family: $font-secondary;
+        font-weight: $font-bold;
+        font-size: clamp(3.8rem, 8vw, 10rem);
+        margin-left: -5px; // 
+    }
+
+    &__paragraph {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    &__text {
+        font-weight: $font-semibold;
+        font-size: $text-4xl;
+    }
+
+    &__status {
+        font-weight: $font-semibold;
+        font-size: $text-lg;
+
+        &-icon {
+            transform: translateY(2px);
+        }
+
+        &-link {
+            color: $color-tertiary;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            
+            &:hover {
+                color: darken($color-tertiary, 10%);
+            }
+        }
+    }
+
+    &__button-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .section_hero {
+        gap: 2rem;
+        
+        &__button-container {
+            gap: 0.5rem;
+        }
+    }
+}

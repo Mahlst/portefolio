@@ -30,6 +30,7 @@
     &__status {
         font-weight: $font-semibold;
         font-size: $text-lg;
+        color: darken($color-secondary, 20%);
 
         &-icon {
             transform: translateY(2px);

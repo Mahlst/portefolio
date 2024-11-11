@@ -1,7 +1,7 @@
 @use './src/styles/variables' as *;
 @use './src/styles/mixins' as *;
 
-.section_hero {
+.section__hero {
     color: $color-secondary;
     display: flex;
     flex-direction: column;
@@ -55,7 +55,7 @@
 }
 
 @include media-breakpoint-down(md) {
-    .section_hero {
+    .section__hero {
         gap: 2rem;
         
         &__button-container {

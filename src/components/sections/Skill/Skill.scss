@@ -97,7 +97,7 @@
     &__line {
         flex: 1 1 auto;
         height: 1px;
-        background-color: #262626;
+        background-color: $color-quaternary;
         position: relative;
 
         @include media-breakpoint-down(md) {
@@ -132,7 +132,7 @@
             width: 52px;
             height: 52px;
             border-radius: 50%;
-            background-color: #262626;
+            background-color: $color-quaternary;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -156,7 +156,7 @@
         top: calc(100% + 15px);
         left: 50%;
         transform: translateX(-50%);
-        background-color: #262626;
+        background-color: $color-quaternary;
         padding: 1rem 1.25rem;
         border-radius: 0.5rem;
         width: max-content;
@@ -182,7 +182,7 @@
             transform: translateX(-50%) rotate(45deg);
             width: 12px;
             height: 12px;
-            background-color: #262626;
+            background-color: $color-quaternary;
 
             @include media-breakpoint-down(md) {
             display: none;
@@ -196,7 +196,7 @@
         }
     
         &-desc {
-            color: #a3a3a3;
+            color: $color-secondary;
             font-size: 0.875rem;
             line-height: 1.5;
         }

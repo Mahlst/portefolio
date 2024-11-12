@@ -24,3 +24,14 @@ $font-regular: 400;
 $font-medium: 500;
 $font-semibold: 600;
 $font-bold: 700;
+
+// Tag Colors
+$tag-colors: (
+  'blue': (bg: rgba(0, 229, 255, 0.1), border: $color-tertiary, text: $color-tertiary),
+  'red': (bg: rgba(255, 69, 58, 0.1), border: #FF453A, text: #FF453A),
+  'green': (bg: rgba(48, 209, 88, 0.1), border: #30D158, text: #30D158),
+  'yellow': (bg: rgba(255, 214, 10, 0.1), border: #FFD60A, text: #FFD60A),
+  'purple': (bg: rgba(191, 90, 242, 0.1), border: #BF5AF2, text: #BF5AF2),
+  'pink': (bg: rgba(255, 55, 95, 0.1), border: #FF375F, text: #FF375F),
+  'indigo': (bg: rgba(94, 92, 230, 0.1), border: #5E5CE6, text: #5E5CE6)
+);

@@ -1,7 +1,8 @@
 import Header from "../../components/layout/Header/Header";
-import About from "../../components/sections/About/About";
 import Hero from "../../components/sections/Hero/Hero";
+import About from "../../components/sections/About/About";
 import Skill from "../../components/sections/Skill/Skill";
+import Projects from "../../components/sections/Projects/Projects";
 
 export default function Home() {
     return(
@@ -10,6 +11,7 @@ export default function Home() {
             <Hero />
             <About />
             <Skill />
+            <Projects />
         </>
     )
 }

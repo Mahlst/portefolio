@@ -58,7 +58,7 @@ export default function Skill() {
     const [activeTooltip, setActiveTooltip] = useState({ category: null, index: null });
 
     return (
-        <section className="section__skills">
+        <section id="skills" className="section__skills">
             {categories.map((category, categoryIndex) => (
                 <div key={categoryIndex} className="skill">
                     <span className="skill__title">{category.title}</span>

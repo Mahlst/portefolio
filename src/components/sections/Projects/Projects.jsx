@@ -6,7 +6,7 @@ import { FaConnectdevelop } from "react-icons/fa";
 
 export default function Projects() {
     return (
-        <section className='section__projects'>
+        <section id="projects" className='section__projects'>
             <h2 className='section__projects-title'><FaConnectdevelop className='section__projects-icon'/> Mes derniers projets</h2>
             <div className='section__projects-container'>
                 {projectsList.map((project, index) => (

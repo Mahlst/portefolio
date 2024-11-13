@@ -7,7 +7,7 @@ import { IoIosMail } from "react-icons/io";
 export default function Contact() {
     return(
         <>
-            <section className='section__contact'>
+            <section id="contact" className='section__contact'>
                 <h2 className='section__contact__title'>Restons en contact</h2>
                 <div>
                     <p className='section__contact__text'>

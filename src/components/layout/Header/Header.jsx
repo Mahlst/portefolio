@@ -31,9 +31,9 @@ export default function Header() {
                 <span></span>
             </div>
             <nav className={`header_nav ${isMenuOpen ? 'open' : ''}`}>
-                <Link to="/skills" onClick={() => setIsMenuOpen(false)}>Compétences</Link>
-                <Link to="/projects" onClick={() => setIsMenuOpen(false)}>Projets</Link>
-                <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+                <Link to="/#skills" onClick={() => setIsMenuOpen(false)}>Compétences</Link>
+                <Link to="/#projects" onClick={() => setIsMenuOpen(false)}>Projets</Link>
+                <Link to="/#contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
             </nav>
         </header>
     )

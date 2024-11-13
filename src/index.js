@@ -14,7 +14,7 @@ import "@fontsource/space-grotesk/700.css";
 import '../src/styles/_reset.scss';
 import '../src/styles/main.scss';
 
-import App from './pages/Home/Home';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

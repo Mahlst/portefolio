@@ -1,71 +1,29 @@
 import './Projects.scss';
+import { Link } from 'react-router-dom';
 import ProjectCard from '../../ui/Card/ProjectCard';
-import portrait from '../../../assets/portrait.jpg'
-import booki from '../../../assets/booki.jpg'
-import { FaHtml5 } from "react-icons/fa";
-import { IoLogoCss3 } from "react-icons/io5";
-import { IoLogoJavascript } from "react-icons/io5";
+import { projectsList } from '../../../data/projects';
+import { FaConnectdevelop } from "react-icons/fa";
 
 export default function Projects() {
-    // Données des projets
-    const projectsList = [
-        {
-            title: "Booki",
-            description: "Créez la page d'accueil d'une agance de voyage avec HTML & CSS",
-            imageUrl: booki,
-            tags: [
-                { 
-                    label: "HTML", 
-                    icon: <FaHtml5 />,
-                    color: "#e65100"
-                },
-                { 
-                    label: "CSS", 
-                    icon: <IoLogoCss3 />,
-                    color: "#1471b6"
-                }
-            ]
-        },
-        {
-            title: "Autre Projet",
-            description: "Description de mon autre projet tout aussi intéressant.",
-            imageUrl: portrait,
-            tags: [
-                { 
-                    label: "JavaScript", 
-                    icon: <IoLogoJavascript />,
-                    color: "#F7DF1E" // Couleur JavaScript
-                }
-            ]
-        },
-        {
-            title: "Autre Projet",
-            description: "Description de mon autre projet tout aussi intéressant.",
-            imageUrl: portrait,
-            tags: [
-                { 
-                    label: "JavaScript", 
-                    icon: <IoLogoJavascript />,
-                    color: "#F7DF1E" // Couleur JavaScript
-                }
-            ]
-        }
-    ];
-
     return (
-        <>
-            <section className='section__projects'>
-                    {projectsList.map((project, index) => (
+        <section className='section__projects'>
+            <h2 className='section__projects-title'><FaConnectdevelop className='section__projects-icon'/> Mes derniers projets</h2>
+            <div className='section__projects-container'>
+                {projectsList.map((project, index) => (
+                    <Link 
+                        key={index} 
+                        to={`/projects/${project.id}`} 
+                        className="project-link"
+                    >
                         <ProjectCard
-                            key={index}
                             title={project.title}
                             description={project.description}
                             imageUrl={project.imageUrl}
                             tags={project.tags}
-                            onClick={() => console.log(`Projet ${project.title} cliqué`)}
                         />
-                    ))}
-            </section>
-        </>
+                    </Link>
+                ))}
+            </div>
+        </section>
     );
 }

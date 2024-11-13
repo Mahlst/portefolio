@@ -5,7 +5,29 @@
     max-width: 1200px;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
     gap: 4rem;
+
+    &-title {
+        color: $color-secondary;
+        font-size: $text-4xl;
+    }
+
+    &-icon {
+        transform: translateY(5px);
+    }
+
+    &-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+}
+
+.project-link {
+    width: 100%;
+    max-width: 500px;
+    text-decoration: none;
 }

@@ -1,0 +1,36 @@
+@use './src/styles/variables' as *;
+@use './src/styles/mixins' as *;
+
+.section__contact {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    &__title {
+        color: $color-secondary;
+        font-size: $text-4xl;
+        font-weight: $font-bold;        
+    }
+
+    &__text {
+        color: rgba($color-secondary, 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-span {
+            color: $color-tertiary;
+            font-weight: $font-bold;
+        }
+    }
+
+    &__button {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}

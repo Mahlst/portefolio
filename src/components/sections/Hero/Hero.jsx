@@ -28,13 +28,13 @@ export default function Hero() {
                         variant="default"
                     />
                     <SocialButton 
-                        href="https://linkedin.com/in/votre-profil"
+                        href="https://www.linkedin.com/in/peter-rothlander/"
                         icon={FaLinkedin}
                         label="LinkedIn"
                         variant="default"
                     />
                     <SocialButton 
-                        href="mailto:votre.email@example.com"
+                        href="mailto:peter.rothlaender.jr@gmail.com"
                         icon={IoIosMail}
                         label="Email"
                         variant="default"

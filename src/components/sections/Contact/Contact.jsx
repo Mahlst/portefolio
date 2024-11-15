@@ -3,6 +3,7 @@ import SocialButton from "../../ui/Button/SocialButton"
 import { FaLinkedin } from "react-icons/fa";
 import { FaFileDownload } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
+import CV from '../../../assets/curriculum_vitæ.pdf'
 
 export default function Contact() {
     return(
@@ -19,19 +20,19 @@ export default function Contact() {
                 </div>
                 <div className='section__contact__button'>
                     <SocialButton 
-                        href="https://linkedin.com/in/votre-profil"
+                        href="https://www.linkedin.com/in/peter-rothlander/"
                         icon={FaLinkedin}
                         label="LinkedIn"
                         variant="default"
                     />
                     <SocialButton 
-                        href="mailto:votre.email@example.com"
+                        href="mailto:peter.rothlaender.jr@gmail.com"
                         icon={IoIosMail}
                         label="Email"
                         variant="default"
                     />
                     <SocialButton 
-                        href="mailto:votre.email@example.com"
+                        href={CV}
                         icon={FaFileDownload}
                         label="CV"
                         variant="default"

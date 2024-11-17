@@ -12,12 +12,8 @@ export default function Hero() {
                 <h1 className="section__hero__title">Rothländer <br/>Peter.</h1>
                 <div className="section__hero__paragraph">
                     <h2 className="section__hero__text">Développeur Web</h2>
-                    <p className="section__hero__status"><MdLibraryBooks className="section__hero__status-icon"/> Actuellement en formation chez 
-                        <a className="section__hero__status-link" 
-                            href="https://openclassrooms.com/fr/" 
-                            target="_blank" 
-                            rel="noopener noreferrer"> OpenClassrooms
-                        </a>
+                    <p className="section__hero__status"><MdLibraryBooks className="section__hero__status-icon"/> 
+                    Actuellement en formation chez OpenClassrooms
                     </p>
                 </div>
                 <div className="section__hero__button-container">
